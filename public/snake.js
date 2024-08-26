@@ -156,6 +156,7 @@ function resetGame() {
 }
 
 function displayGameOver() {
+  clearInterval(interval);
   ctx.font = "50px Arial";
   ctx.fillStyle = "black";
   ctx.textAlign = "center";
