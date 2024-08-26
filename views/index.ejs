@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../public/index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Snakes Game</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Snakes Game</h1>
+      <h3 id="instruction" hidden>Press the space bar to start again!</h3>
+      <h3>High Score = <span id="high-score"><%= highScore %></span></h3>
+      <canvas id="canvas" height="500" width="500"></canvas>
+      <h3>Score: <span id="score">0</span></h3>
+      <button id="reset">Reset</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script type="module" src="../public/snake.js"></script>
+  </body>
+</html>
